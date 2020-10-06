@@ -30,6 +30,7 @@ add_custom_target(wasm_preload DEPENDS ${WASM_BOOT_FILE})
 set(WASM_WEB_LINK_FLAGS
     -s WASM=1
     -s MODULARIZE=1
+    -s EXPORT_ES6=1
     -s EXPORT_NAME=SWIPL
     -s BINARYEN_TRAP_MODE=clamp
     -s NO_EXIT_RUNTIME=0
